@@ -9,8 +9,10 @@ import img2pdf
 # Set up logging
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s", level=logging.INFO)
 
-# Replace with your Telegram bot token
-BOT_TOKEN = "7920251283:AAGdKYLYAd6iZkM82GWqt8gg6CftAU6GPag"
+import os
+
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+
 
 # Function to process an image (convert to scanned B&W)
 async def process_image(image_path):
