@@ -3,3 +3,5 @@ python-telegram-bot
 pdf2image
 img2pdf
 pillow
+flask
+gunicorn
